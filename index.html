@@ -1,68 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Dropdown</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Style for sidebar */
-    .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #343a40;
-      padding-top: 20px;
-    }
-    
-    /* Style for sidebar links */
-    .sidebar a {
-      padding: 10px;
-      font-size: 18px;
-      text-decoration: none;
-      color: white;
-      display: block;
-    }
-    
-    /* Style for dropdown content */
-    .dropdown-content {
-      display: none;
-    }
-  </style>
-</head>
-<body>
+  <head>
+  	<title>Sidebar 07</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="sidebar">
-  <a href="#">Home</a>
-  <div class="dropdown">
-    <a href="#" onclick="toggleDropdown()">Policy and Planning</a>
-    <div id="dropdownContent" class="dropdown-content">
-      <a href="#">Where to Begin</a>
-      <a href="#">Top Tips for an Effective Library</a>
-      <a href="#">Library Policy</a>
-      <a href="#">Budgets</a>
-      <a href="#">Judging Success</a>
-    </div>
-  </div>
-  <a href="#">Books</a>
-  <a href="#">Staffing</a>
-  <a href="#">Space</a>
-</div>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="active">
+				<h1><a href="index.html" class="logo">M.</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home"></span> Home</a>
+          </li>
+          <li>
+              <a href="#"><span class="fa fa-user"></span> About</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note"></span> Blog</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-cogs"></span> Services</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-paper-plane"></span> Contacts</a>
+          </li>
+        </ul>
 
-<script>
-  // JavaScript function to toggle dropdown content
-  function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  }
-</script>
+        <div class="footer">
+        	<p>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+					</p>
+        </div>
+    	</nav>
 
-</body>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Dashboard</h2>
+        <div class="row  card-table">
+          <div class="col-sm-4  card">
+           <h2>Borrower</h2>
+           <div class="card-body">
+            <--- card--->
+            
+           </div>
+           
+          </div>
+            <div class=" col-sm-4 card">
+           <h2>Total</h2>
+           <div class="card-body">
+            <--- card--->
+            
+           </div>
+           
+          </div>
+            <div class=" col-sm-4 card">
+           <h2>weekly</h2>
+           <div class="card-body">
+            <--- card--->
+            
+           </div>
+           
+          </div>
+         
+        </div>
+        
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
