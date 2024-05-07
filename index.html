@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Dropdown</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Style for sidebar */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #343a40;
+      padding-top: 20px;
+    }
+    
+    /* Style for sidebar links */
+    .sidebar a {
+      padding: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    
+    /* Style for dropdown content */
+    .dropdown-content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="#">Home</a>
+  <div class="dropdown">
+    <a href="#" onclick="toggleDropdown()">Policy and Planning</a>
+    <div id="dropdownContent" class="dropdown-content">
+      <a href="#">Where to Begin</a>
+      <a href="#">Top Tips for an Effective Library</a>
+      <a href="#">Library Policy</a>
+      <a href="#">Budgets</a>
+      <a href="#">Judging Success</a>
+    </div>
+  </div>
+  <a href="#">Books</a>
+  <a href="#">Staffing</a>
+  <a href="#">Space</a>
+</div>
+
+<script>
+  // JavaScript function to toggle dropdown content
+  function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
