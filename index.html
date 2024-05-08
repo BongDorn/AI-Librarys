@@ -76,36 +76,51 @@
           </div>
         </nav>
 
-        <h2 class="mb-4">Dashboard</h2>
-        <div class="row  card-table">
-          <div class="col-sm-4  card">
-           <h2>Borrower</h2>
-           <div class="card-body">
-            <--- card--->
-            
-           </div>
-           
-          </div>
-            <div class=" col-sm-4 card">
-           <h2>Total</h2>
-           <div class="card-body">
-            <--- card--->
-            
-           </div>
-           
-          </div>
-            <div class=" col-sm-4 card">
-           <h2>weekly</h2>
-           <div class="card-body">
-            <--- card--->
-            
-           </div>
-           
-          </div>
-         
+       
+        <!-- Overview Statistics Section -->
+        <div class="row  mt-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                       <h2 class="card-title">Total Books</h2>
+                       <hr>
+                        <h4 class="card-text"><?php echo $total_books; ?></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Total Members</h2>
+                        <hr>
+                        <h4 class="card-text"><?php echo $total_members; ?></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Loaned Books</h2>
+                        <hr>
+                        <h4 class="card-text"><?php echo $loaned_books; ?></h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
+
+        <div class="row">
+        <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                       <h2 class="card-title">Transaction History</h2>
+                       <hr>
+                        <h4 class="card-text"><?php echo $total_books; ?></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 		</div>
 
     <script src="js/jquery.min.js"></script>
